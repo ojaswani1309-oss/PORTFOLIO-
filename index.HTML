@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> OJASWANI | Full Stack Developer</title>
+
+<style>
+:root{
+  --bg:#0b1120;
+  --card:#111827;
+  --primary:#38bdf8;
+  --text:#e5e7eb;
+  --muted:#9ca3af;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+  background:var(--bg);
+  color:var(--text);
+  scroll-behavior:smooth;
+}
+
+header{
+  position:fixed;
+  top:0;
+  width:100%;
+  background:rgba(17,24,39,0.95);
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px 10%;
+  z-index:100;
+}
+
+header h1{
+  color:var(--primary);
+  font-size:22px;
+}
+
+nav a{
+  color:var(--text);
+  margin-left:20px;
+  text-decoration:none;
+  font-size:15px;
+}
+
+nav a:hover{
+  color:var(--primary);
+}
+
+section{
+  padding:90px 10%;
+}
+
+.hero{
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+
+.hero h2{
+  font-size:46px;
+  color:var(--primary);
+}
+
+.hero span{
+  color:white;
+}
+
+.hero p{
+  max-width:600px;
+  margin-top:20px;
+  color:var(--muted);
+  font-size:18px;
+}
+
+.btn{
+  margin-top:30px;
+  width:max-content;
+  padding:12px 25px;
+  background:var(--primary);
+  color:black;
+  border-radius:6px;
+  text-decoration:none;
+  font-weight:600;
+}
+
+.btn:hover{
+  opacity:0.9;
+}
+
+h2.section-title{
+  font-size:32px;
+  margin-bottom:30px;
+  color:var(--primary);
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:25px;
+}
+
+.card{
+  background:var(--card);
+  padding:25px;
+  border-radius:12px;
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 10px 30px rgba(56,189,248,0.2);
+}
+
+.card h3{
+  margin-bottom:10px;
+}
+
+.card p{
+  color:var(--muted);
+  font-size:15px;
+}
+
+footer{
+  text-align:center;
+  padding:30px;
+  background:#020617;
+  color:var(--muted);
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1> OJASWANI </h1>
+  <nav>
+    <a href="#about">ABOUT </a>
+    <a href="#skills">SKILLLS</a>
+    <a href="#projects">PROJECTS</a>
+    <a href="#contact">CONTACT</a>
+
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Hi, I'm <span>OJASWANI</span></h2>
+  <p>
+    I am a passionate Full Stack Developer and B.Tech CSE (AI) student who loves building responsive and user-friendly web applications. I continuously work on improving my frontend skills, problem-solving ability, and understanding of modern web technologies to become an industry-ready software engineer.
+  </p>
+  <a href="RESUME.PDF" class="btn" target="_blank">VIEW RESUME </a>
+  <a href="#projects" class="btn">View My Work</a>
+</section>
+
+<section id="about">
+  <h2 class="section-title">About Me</h2>
+  <p>
+I am a highly passionate and motivated Full Stack Developer and a second-year B.Tech student specializing in Computer Science with Artificial Intelligence. I genuinely enjoy transforming ideas into clean, responsive, and user-friendly web interfaces. With a strong foundation in programming, data structures, and frontend development, I focus on writing structured code and building visually appealing applications. I am deeply curious about how modern web technologies work and constantly push myself to learn, improve, and adapt. My long-term goal is to grow as a professional software developer and contribute to impactful, real-world products through technology.
+  </p>
+</section>
+
+<section id="skills">
+  <h2 class="section-title">Skills</h2>
+  <div class="grid">
+    <div class="card">Python</div>
+    <div class="card">Java</div>
+    <div class="card">C</div>
+    <div class="card">JavaScript</div>
+    <div class="card">HTML5</div>
+    <div class="card">CSS3</div>
+    <div class="card">Data Structures</div>
+    <div class="card">Problem Solving</div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2 class="section-title">Projects</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Basic Calculator</h3>
+      <p>
+        A responsive calculator application built using HTML, CSS and JavaScript
+        supporting basic arithmetic operations , user interface with buttons and display screen ,handle user input, clearing screen, and real-time result display with keyboard support and styling enhancements.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Responsive Image Gallery</h3>
+      <p>
+        Modern image gallery with responsive layout optimized for all screen sizes ,Used JavaScript for navigation (next/prev buttons, lightbox view), with add hover effects and smooth transitions,having responsive design for different screen sizes and having image filters or categories
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Portfolio Page</h3>
+      <p>Designed and developed a fully responsive personal portfolio website using HTML and CSS. The website showcases my skills, projects, and resume with a clean, modern UI and mobile-first approach. Deployed live using GitHub Pages.
+        
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2 class="section-title">Contact</h2>
+  <p>Email: ojaswani1309@gmail.com</p>
+  <p>GitHub: github.com/ojaswani1309-oss</p>
+  <p>LinkedIn: linkedin.com/in/ojaswani-chaudhary-4b611537a</p>
+</section>
+
+<footer>
+  © 2026 OJASWANI | Full Stack Software Developer
+</footer>
+
+</body>
+</html>
